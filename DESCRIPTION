@@ -1,0 +1,16 @@
+Package: hw04pjaehee99
+Title: STAT-413 Homework Creating a Package
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jaehee",
+           family = "Lee",
+           role = c("aut", "cre"),
+           email = "jl8883a@student.american.edu",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (Two functions inside this package).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to
+    pick a license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
