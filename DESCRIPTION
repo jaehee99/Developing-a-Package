@@ -1,5 +1,5 @@
 Package: hw04pjaehee99
-Title: STAT-413 Homework Creating a Package
+Title: STAT-413_Homework Creating a Package
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Jaehee",
@@ -8,9 +8,11 @@ Authors@R:
            email = "jl8883a@student.american.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: What the package does (Two functions inside this package).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Suggests: 
+    spelling
+Language: en-US
