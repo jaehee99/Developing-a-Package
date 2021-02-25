@@ -1,3 +1,12 @@
+#' Function 1 Recursive Sequence
+#'
+#' @param x x vector
+#' @param n n num
+#'
+#' @return This function returns element n
+#' @export myseq_n
+#'
+#' @examples myseq_n(x=c(2,4,3), n= 4)
 myseq_n <- function(x, n){
   if (!(length(x) == 3 & is.numeric(x)))
     stop("Do not meet requirements")
@@ -14,5 +23,3 @@ myseq_n <- function(x, n){
   }
   return(v[n])
 }
-# Test it
-myseq_n(x=c(2,4,3), n= 4)
