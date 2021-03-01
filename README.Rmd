@@ -19,12 +19,15 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of hw04pjaehee99 is to ...
+The goal of hw04pjaehee99 is to check 2 functions 
 
 ## Installation
 
 You can install the released version of hw04pjaehee99 by asking me for it. 
 
+```{r}
+install.packages("hw04pjaehee99")
+```
 
 
 ## Example

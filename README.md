@@ -6,12 +6,17 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of hw04pjaehee99 is to …
+The goal of hw04pjaehee99 is to check 2 functions
 
 ## Installation
 
 You can install the released version of hw04pjaehee99 by asking me for
 it.
+
+``` r
+install.packages("hw04pjaehee99")
+#> Error in contrib.url(repos, "source"): trying to use CRAN without setting a mirror
+```
 
 ## Example
 
@@ -52,10 +57,10 @@ my_data <- tibble::tribble(
   2,4,3,12)
 
 show_plot(my_data)
-#> Warning in if (!(tibble::as_tibble(o))) stop("Do not meet requirements"): the
-#> condition has length > 1 and only the first element will be used
-#> Warning in if (!(as.integer(o[[4]]))) stop("Do not meet requirements"): the
-#> condition has length > 1 and only the first element will be used
+#> Warning in if (!(tibble::as_tibble(o))) {: the condition has length > 1 and only
+#> the first element will be used
+#> Warning in if ((o[[4]] != as.integer(o[[4]]))) {: the condition has length > 1
+#> and only the first element will be used
 ```
 
 <img src="man/figures/README-ggplot2-1.png" width="100%" />
