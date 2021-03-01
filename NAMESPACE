@@ -2,5 +2,6 @@
 
 export("%>%")
 export(myseq_n)
+export(show_plot)
 importFrom(magrittr,"%>%")
 importFrom(tibble,tibble)

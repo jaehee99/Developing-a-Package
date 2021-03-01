@@ -8,27 +8,20 @@
 #' @examples show_plot(my_data)
 
 show_plot <- function(o){
-  if(!(tibble::as_tibble(o))){
+  if(!(tibble::is_tibble(o)))
     stop("Do not meet requirements")
-}
-  if(!(ncol(o)==4)){
+  if(!(ncol(o)==4))
     stop("Do not meet requirements")
-  }
-  if(! all(o[[4]]>0)){
+  if(! all(o[[4]]>0))
     stop("Do not meet requirements")
-  }
-  if(!(is.numeric(o[[1]]))){
+  if(!(is.numeric(o[[1]])))
     stop("Do not meet requirements")
-  }
-  if(!(is.numeric(o[[2]]))){
+  if(!(is.numeric(o[[2]])))
     stop("Do not meet requirements")
-  }
-  if (!(is.numeric(o[[3]]))){
+  if (!(is.numeric(o[[3]])))
     stop("Do not meet requirements")
-  }
-  if(!(as.integer(o[[4]]))){
+  if(!(is.integer(o[[4]])))
     stop("Do not meet requirements")
-  }
 
   df <- tibble(n=0, y = 0)
   o <- tibble(o)
@@ -49,5 +42,3 @@ show_plot <- function(o){
 
   return(plot)
 }
-
-

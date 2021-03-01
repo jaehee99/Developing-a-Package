@@ -13,10 +13,6 @@ The goal of hw04pjaehee99 is to …
 You can install the released version of hw04pjaehee99 by asking me for
 it.
 
-``` r
-install.packages("hw04pjaehee99")
-```
-
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
@@ -39,3 +35,27 @@ myseq_n(x=c(2,4,3), n= 6)
 myseq_n(x=c(2,4,3), n= 7)
 #> [1] 2.754762
 ```
+
+# Check Function 2
+
+``` r
+my_data <- tibble::tribble(
+  ~x, ~y, ~z, ~n,
+  2,4,3,3,
+  2,4,3,4,
+  2,4,3,5,
+  2,4,3,6,
+  2,4,3,7,
+  2,4,3,8,
+  2,4,3,9,
+  2,4,3,10,
+  2,4,3,12)
+
+show_plot(my_data)
+#> Warning in if (!(tibble::as_tibble(o))) stop("Do not meet requirements"): the
+#> condition has length > 1 and only the first element will be used
+#> Warning in if (!(as.integer(o[[4]]))) stop("Do not meet requirements"): the
+#> condition has length > 1 and only the first element will be used
+```
+
+<img src="man/figures/README-ggplot2-1.png" width="100%" />

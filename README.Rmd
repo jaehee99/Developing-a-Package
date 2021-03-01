@@ -9,7 +9,8 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "100%", 
+  error = TRUE
 )
 ```
 
@@ -24,9 +25,7 @@ The goal of hw04pjaehee99 is to ...
 
 You can install the released version of hw04pjaehee99 by asking me for it. 
 
-``` r
-install.packages("hw04pjaehee99")
-```
+
 
 ## Example
 
@@ -45,8 +44,9 @@ myseq_n(x=c(2,4,3), n= 5)
 myseq_n(x=c(2,4,3), n= 6)
 myseq_n(x=c(2,4,3), n= 7)
 ```
+# Check Function 2
 
-```{r}
+```{r ggplot2}
 my_data <- tibble::tribble(
   ~x, ~y, ~z, ~n,
   2,4,3,3,
@@ -58,6 +58,10 @@ my_data <- tibble::tribble(
   2,4,3,9,
   2,4,3,10,
   2,4,3,12)
+
 show_plot(my_data)
 ```
+
+
+
 
