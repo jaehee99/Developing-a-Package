@@ -8,7 +8,7 @@
 #' @examples show_plot(my_data)
 
 show_plot <- function(o){
-  if(!(tibble::is_tibble(o)))
+  if(!(tibble::is.tibble(o)))
     stop("Do not meet requirements")
   if(!(ncol(o)==4))
     stop("Do not meet requirements")
@@ -20,7 +20,7 @@ show_plot <- function(o){
     stop("Do not meet requirements")
   if (!(is.numeric(o[[3]])))
     stop("Do not meet requirements")
-  if(!(is.integer(o[[4]])))
+  if(!(as.integer(o[[4]])))
     stop("Do not meet requirements")
 
   df <- tibble(n=0, y = 0)
