@@ -20,7 +20,7 @@ show_plot <- function(o){
     stop("Do not meet requirements")
   if (!(is.numeric(o[[3]])))
     stop("Do not meet requirements")
-  if(!(as.integer(o[[4]])))
+  if(!(is.integer(o[[4]])))
     stop("Do not meet requirements")
 
   df <- tibble(n=0, y = 0)
